@@ -1,0 +1,165 @@
+/* Responsive Text */
+html {
+    font-size: .9rem;
+}
+
+@media (max-width: 480px) {
+  html {
+      font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 480px and max-width: 768px) {
+  html {
+      font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px and max-width: 1500px) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1500px) {
+  html {
+      font-size: 1.6rem;
+  }
+}
+
+/* Text Decoration */
+a {
+    color: #058ED9;
+}
+a:hover {
+    color: #B8B3F5;
+}
+.underline {
+    text-decoration: underline;
+}
+.btn-lg {
+    padding: 1rem 4rem !important;
+}
+.txt-blue {
+    color: #058ED9; /* Blue */;
+}
+.special {
+    text-shadow: -5px 1px #B8B3F5;
+    color: white;
+}
+.special2 {
+    text-shadow: -4px 1px #B8B3F5 !important;
+    color: #058ED9 !important;
+}
+.special3 {
+    text-shadow: -2px 1px #B8B3F5;
+    color: white;
+}
+
+/* Navigation */
+.navbar-light , .navbar-toggler , .navbar-light:focus {
+    outline: 0 !important;
+    border-color: none !important;
+    border: none !important;
+    background-color: white;
+}
+.nav-link:hover, .active {
+    color: #B8B3F5 !important;
+}
+.break-txt {
+    word-break: break-word;
+}
+/* Background */
+.bg-purple {
+    background-color: #B8B3F5; /* Purple */
+}
+.bg-lightpurple {
+    background-color: #EBEAFC; /* Light purrple */
+}
+.bg-blue {
+    background-color: #292F36; /* Gun metal */
+}
+.bg-duo {
+    background-image: url(../images/duotone.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Lists */
+.list-style-sq {
+    list-style: circle;
+}
+
+/* Fieldset for form customization */
+fieldset {
+    display: block;
+    border-radius: 2%;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 3em 3em;
+    border-style: solid;
+    border-color: #058ED9;
+    border-left-width: thin;
+    border-right-width: thin;
+}
+
+/* Input - text input customization */
+.input-style {
+    background-color: transparent !important;
+    color: #FFF;
+    border-style: solid !important;
+    border-bottom-color:#058ED9 !important;
+    border-top-style: none !important;
+    border-left-style: none !important;
+    border-right-style: none !important;
+}
+
+/* Textarea customization */
+
+textarea { 
+    background-color: transparent !important;
+    color: #FFF;
+    border-style: solid !important;
+    border-color:#058ED9 !important;   
+}
+
+/* File upload customization */
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    border: .1rem solid #058ED9 !important;
+    background-color: white !important;
+    color: black !important;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.custom-file-upload:hover {
+    background-color: #058ED9 !important;
+    color: white !important;
+}
+
+/* Radio and Checkbox color */
+.custom-control-label::before {
+    background-color: #EBEAFC;
+}
+
+/* Radio and checkbox color on click */
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before, .custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #B8B3F5;
+}
